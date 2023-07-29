@@ -1,0 +1,93 @@
+{
+    "tintuc": [
+        {
+            "img": "./img/tintuc1.png",
+            "title": "Kỳ Thi Học Sinh Giỏi Cấp Cụm Năm Học 2022-2023",
+            "noidung": "Nhằm giúp thêm một bước phát hiện các học sinh có năng lực học tập tốt thuộc các khối 10 -11 của các trường THPT trong Cụm trường THPT Bắc - Nam Từ Liêm và chuẩn bị đội ngũ cho kỳ thi HSG cấp Thành phố. Đồng thời tạo điều kiện để các em học sinh giỏi làm quen với những hình thức thi cử khác nhau, có cơ hội giao lưu trao đổi giữa các học sinh của các trường trong Cụm."
+        },
+        {
+            "img": "./img/tintuc2.jpg",
+            "title": "Lễ Kỷ Niệm 88 Năm Ngày Thành Lập Đoàn TNCS Hồ Chí Minh",
+            "noidung": "Sáng ngày 25/03/2022, hoà cùng không khí tưng bừng của thanh niên cả nước hướng tới kỷ niệm 88 năm ngày thành lập Đoàn TNCS Hồ Chí Minh 26/3/1931 – 26/3/2022. Trường THPT Giao Thủy long trọng tổ chức lễ kỷ niệm, cùng nhau ôn lại truyền thống vẻ vang của Đoàn."
+        },
+        {
+            "img": "./img/tintuc3.jpg",
+            "title": "Thông báo lịch nghỉ tết Nguyên Đán 2022",
+            "noidung": "Được sự đồng ý của UBND Thành phố tại văn bản số 237/UBND-KGVX ngày 16/01/2022 của UBND Thành phố về việc nghỉ Tết Nguyên đán Kỷ Hợi năm 2022, theo sự chỉ đạo của ngành Giáo dục và Đào tạo, trường THPT Xuân Đỉnh thông báo lịch nghỉ Tết Nguyên đán Kỷ Hợi năm 2022 như sau:"
+        },
+        {
+            "img": "./img/tintuc4.jpg",
+            "title": "Danh sách học sinh khối 10 và giáo viên chủ nhiệm 2022-2023",
+            "noidung": "Xin mời phụ huynh và học sinh xem file đính kèm 'Danh sách học sinh và giáo viên chủ nhiệm khối 10 năm học 2022 - 2023)'"
+        }
+    ],
+    "tainguyen": [
+        {
+            "ten": "Toán",
+            "khoi10": "Toan 10.pdf",
+            "khoi11": "Toan 11.pdf",
+            "khoi12": "Toan 12.pdf"
+        },
+        {
+            "ten": "Lý",
+            "khoi10": "Lý 10.pdf",
+            "khoi11": "Lý 11.pdf",
+            "khoi12": "Lý 12.pdf"
+        },
+        {
+            "ten": "Hóa",
+            "khoi10": "Hóa 10.pdf",
+            "khoi11": "Hóa 11.pdf",
+            "khoi12": "Hóa 12.pdf"
+        },
+        {
+            "ten": "Văn",
+            "khoi10": "Văn 10.pdf",
+            "khoi11": "Văn 11.pdf",
+            "khoi12": "Văn 12.pdf"
+        },
+        {
+            "ten": "Anh",
+            "khoi10": "Anh 10.pdf",
+            "khoi11": "Anh 11.pdf",
+            "khoi12": "Anh 12.pdf"
+        },
+        {
+            "ten": "Sinh",
+            "khoi10": "Sinh 10.pdf",
+            "khoi11": "Sinh 11.pdf",
+            "khoi12": "Sinh 12.pdf"
+        },
+        {
+            "ten": "Sử",
+            "khoi10": "Sử 10.pdf",
+            "khoi11": "Sử 11.pdf",
+            "khoi12": "Sử 12.pdf"
+        },
+        {
+            "ten": "Địa",
+            "khoi10": "Địa 10.pdf",
+            "khoi11": "Địa 11.pdf",
+            "khoi12": "Địa 12.pdf"
+        },
+        {
+            "ten": "Công dân",
+            "khoi10": "Công dân 10.pdf",
+            "khoi11": "Công dân 11.pdf",
+            "khoi12": "Công dân 12.pdf"
+        }
+    ],
+    "thuvien":[
+        {"name":"Thời Khóa Biểu Áp Dụng Từ Ngày 11/02/2022"},
+        {"name":"Thư Mời Tham Gia Liên Kết Dạy Tiếng Anh với GVNN"},
+        {"name":"LỊCH CÔNG TÁC TUẦN 33 (NH 2022-2023)"},
+        {"name":"Công Đoàn Trường Năm Học 2022-2023"},
+        {"name":"Chi Bộ Đảng Năm Học 2022-2023"},
+        {"name":"Công Khai Dự Toán Năm 2022"},
+        {"name":"LỊCH CÔNG TÁC TUẦN 32 (NH:2022-2023)"},
+        {"name":"Kỳ Thi Học Sinh Giỏi Cấp Cụm Năm Học 2022-2023"},
+        {"name":"LỊCH CÔNG TÁC TUẦN 31 (NH: 2022-2023)"},
+        {"name":"Chi Đoàn Giáo Viên Năm Học 2022-2023"}
+    ]
+    
+}

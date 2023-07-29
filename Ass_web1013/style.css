@@ -1,0 +1,129 @@
+
+body{
+    background:#c9bbbb;
+}
+#body{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid rgb(7, 7, 7);
+    border-radius: 5px;
+}
+#header{
+    height: 480px;
+    background-color: #26a7ce;
+}
+/* Hết header */
+#menu{
+    height: 40px;
+    background-color: #060707;
+    border-radius: 5px;
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 40px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    line-height: 50px;
+}
+#menu ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+/* Hết menu */
+#slide{
+    height:40px;
+    background-color: #26a7ce;
+    border-radius: 5px;
+}
+#slide p{
+    line-height: 10px;
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+}
+/* hết slide */
+#content{
+    height: 540px;
+    height: 540px;
+    background-color: rgb(14, 247, 247);
+    border-radius: 5px;
+}
+#left{
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: rgb(245, 244, 244);
+    border-radius: 5px;
+}
+.title{
+    background-color: #060707;
+    height: 50px;
+    border-radius: 5px;
+}
+.title h2{
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+#left ul li{
+    list-style: none;
+    display: block;
+    padding-left: 10px;
+    line-height: 50px;
+}
+#left ul li a{
+    text-decoration: none;
+}
+#left ul li:hover{
+    background-color: red;
+    border-bottom: 0px solid white;
+}
+.form{
+    padding: 15px 10px;
+}
+/* hết left */
+#noidung{
+    width: 560px;
+    height: 90%;
+    background-color: rgb(14, 247, 247);
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+.noidung{
+    height: 150px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+/* Hết nội dung */
+#right{
+    width: 180px;
+    height: 100%;
+    float: left;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+#right ul{
+    padding-left: 20px;
+    line-height: 40px;
+}
+#right ul li a{
+    text-decoration: none;
+}
+#right ul li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+#footer{
+    height: 40px;
+    background-color: #26a7ce;
+}
+#footer p{
+    line-height: 10px;
+    font-size: 20px;
+    color: rgb(255, 254, 254);

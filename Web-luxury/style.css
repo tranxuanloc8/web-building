@@ -1,0 +1,93 @@
+@font-face {
+    font-family: myFont;
+    src: url('./img/Roboto-Black.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: myFonty;
+}
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+nav {
+    list-style: none;
+    display: flex;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.active{
+    font-weight: 600;
+    color: orange;
+}
+.banner img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+figcaption{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.content h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.content p{
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-align: left;
+    line-height: 1.6;
+}
+.content button{
+   padding: 25px 60px;
+    background-color: #E0B973;
+    color: white;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 800;
+}
+figcaption img{
+    opacity: 0.8;
+}
+figcaption img:hover{
+    opacity: 1;
+}
+footer{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background-color: #132F66;
+    justify-content: space-between;
+}
+footer img{
+   margin-left: 20px;
+}
+footer .form-send{
+    margin-right: 20px;
+ }
+ footer input{
+    border-radius: 10px;
+    border: 2px solid  #FFA800;
+    padding: 15px 40px;
+ }
+ footer button{
+    background-color:#E0B973 ;
+    padding:  15px 20px;
+    border-radius: 10px;
+    color: white;
+ }  

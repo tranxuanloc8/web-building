@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+    <div id="header">
+        <img src="img/1.jpg" alt="" width="960px" height="500px">
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a class="cav-link" href="trangchu.html">Trang chủ</a></li>
+            <li><a class="cav-link" href="gioithieu.html">Giới thiệu</a></li>
+            <li><a class="cav-link" href="tintuc2.html">Tin tức</a></li>
+            <li><a class="cav-link" href="tainguyen.html">Tài nguyên </a></li>
+            
+            <li><a class="cav-link" href="Tracuudiem.html">Tra cứu điểm</a></li>
+            <li><a class="cav-link" href="lienhe.html">Liên hệ</a></li>
+            
+        </ul>
+    </div>
+    <div id="slide">
+        <marquee><p>Chào mừng các bạn đến với Trường THPT Trần Thị Dung của </p></marquee>
+    </div>
+<div ng-controller="myCtrl">
+    
+    <h1><a href="#" style="color:rgb(255, 17, 0)"> <center>Bản tin Học Sinh</center> </a></h1>
+   
+<div class="tintuc" ng-repeat="x in myWelcome.tintuc">
+    <img src="{{x.img}}" alt="">
+    <div class="tintuc-1">
+        <strong><a href="#">{{x.title}}</a></strong>
+        <p>{{x.noidung}}</p>
+        <a href="#">Xem Thêm</a>
+    </div>
+</div>
+<div style="width:100%;height:550px; margin-top: 20px;text-align: center;padding: 15px;">
+    <img src="img/thidung1.jpg" width="100%" height="100%" alt="">
+</div>
+</div>

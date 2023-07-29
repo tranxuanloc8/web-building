@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+    <div id="header">
+        <img src="img/1.jpg" alt="" width="960px" height="500px">
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a class="cav-link" href="trangchu.html">Trang chủ</a></li>
+            <li><a class="cav-link" href="gioithieu.html">Giới thiệu</a></li>
+            <li><a class="cav-link" href="tintuc2.html">Tin tức</a></li>
+            <li><a class="cav-link" href="tainguyen.html">Tài nguyên </a></li>
+            
+            <li><a class="cav-link" href="Tracuudiem.html">Tra cứu điểm</a></li>
+            <li><a class="cav-link" href="lienhe.html">Liên hệ</a></li>
+            
+        </ul>
+    </div>
+    <div id="slide">
+        <marquee><p>Chào mừng các bạn đến với Trường THPT Trần Thị Dung của </p></marquee>
+    </div>
+<div id="tainguyen" style="padding:15px;border:1px solid #cdcd" ng-controller="myCtrl">
+    <h2 align="center">Đề Cương Ôn Tập Học Kì II Năm Học 2022-2023</h2>
+    <p><strong> + Các em học sinh tải về đề cương ôn tập học kì II năm học 2022-2023 ở bảng bên dưới. Chúc các em ôn tập tốt và đạt
+        kết quả cao trong kỳ thi sắp tới!</strong></p>
+    <div>
+        <table cellspacing="0" border="1" style="width:100%;height: 800px; text-align: center">
+            <thead>
+                <th style="width:30px">STT</th>
+                <th style="width:40px">MÔN</th>
+                <th style="width:60px">KHỐI 10</th>
+                <th style="width:60px">KHỐI 11</th>
+                <th style="width:60px">KHỐI 12</th>
+
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in myWelcome.tainguyen">
+                    <td><a href="#"> {{$index + 1}}</a></td>
+                    <td><a href="#"> {{x.ten}}</a></td>
+                    <td><a href="#"> {{a.khoi10}}</a></td>
+                    <td><a href="#"> {{b.khoi11}}</a></td>
+                    <td><a href="#"> {{c.khoi12}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="margin-top:30px;border:1px solid #fdfbfb;padding: 30px">
+       <h3><strong> Các bài viết liên quan</strong></h3>
+        <ul>
+            <li ng-repeat="x in myWelcome.thuvien" style="line-height:40px"><a href="#">{{name}}</a></li>
+        </ul>
+    </div>
+</div>
