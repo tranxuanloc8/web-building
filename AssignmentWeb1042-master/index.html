@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/fixed_navbar.js"></script>
+    <script src="js/coundown.js"></script>
+    <script src="js/SlideShow.js"></script>
+    <script src="js/ValidateForm.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.imgWrap').hover(function () {
+                // $(this).css('width', '36%');
+                $(this).addClass('current');
+                //$(this).siblings().css('width', '16%');
+                $(this).siblings().addClass('notCurrent');
+            }, function () {
+                //$('.imgWrap').css('width', '20%');
+                $('.imgWrap').siblings().removeClass('notCurrent');
+                $('.imgWrap').removeClass('current');
+            });
+        });
+    </script>
+    <script src="js/datepicker-vi.js"></script> <!--Chuyển datepicker sang tiếng việt-->
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "1980:2010"
+            });
+        });
+    </script>
+    <script>
+        hienThongTinTrai = function (x) {
+            $('.thongTinTrai').fadeIn(500);
+            $('.anhPhongTo').attr("src", "images/team" + x + ".jpg");
+            $('.tenTrai').html("Trại số " + x);
+        }
+        dongThongTinTrai = function () {
+            $('.thongTinTrai').fadeOut(500);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class='logo logo_main'>
+            <img src="images/logo.png" alt="logo"/>
+            <div class="chutonhat">
+                <h6>Hội Trại FPT Polytechnic Tây Nguyên Lần thứ 4 năm 2018</h6>
+            </div>
+            <p style="margin-top: 80px;">Còn...</p>
+            <div class="countdown-wrapper">
+                <div class="countdown">
+                    <div class="dongHoSo">
+                        <div class="ngayDenSK chuSo">00</div>
+                        <div class="cdLabel">ngày</div>
+                    </div>
+                    <div class="dongHoSo">
+                        <div class="gioDenSK chuSo">00</div>
+                        <div class="cdLabel">giờ</div>
+                    </div>
+                    <div class="dongHoSo">
+                        <div class="phutDenSK chuSo">00</div>
+                        <div class="cdLabel">phút</div>
+                    </div>
+                    <div class="dongHoSo">
+                        <div class="giayDenSK chuSo">00</div>
+                        <div class="cdLabel">giây</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='nav'>
+            <div class='wrap'>
+                <div class='logo logo_small'>
+                    <img src="images/logo.png" alt="logo" />
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href='index.html'>Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section2'>Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section4'>Hoạt động</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section5'>Hình ảnh</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section7'>Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href='#'>Tiện ích</a>
+                            <ul>
+                                <li><a href="GameXepHinh.html">Xếp hình</a></li>
+                                <li><a href="DoXiNgau.html">Đổ xí ngầu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class='main'>
+        <div id="section2">
+            <div class="section2-left"></div>
+            <div class="section2-right">
+                <h3>Giới thiệu</h3>
+                <p>Nhằm tạo sân chơi lành mạnh, tăng cường mối giao lưu và tình đoàn kết giữa các sinh viên trong toàn trường, đồng thời khích lệ các em rèn luyện thân thể, tham gia các hoạt động có ích nâng cao trí lực để phục vụ tốt cho việc học tập.</p>
+                <p>Hội trại FPOLY TÂY NGUYÊN lần thứ 5/2017 Nhân kỷ niệm 86 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/03/1931 – 26/03/2017) đây cũng là một trong những hoạt động lớn trong năm và theo định kỳ mỗi năm một lần.</p>
+                <br />
+                <p><b>Thời gian:</b> 02 ngày, 25 & 26/03/2017 ( Thứ bảy, chủ nhật )</p>
+                <p><b>Địa điểm:</b> Khu du lịch sinh thái Buôn KOTAM, Km9, QL26, P.Tân Hòa, Tp.BMT</p>
+            </div>
+        </div>
+        <div id="section1">
+            <div style="padding-top: 150px;"><p>Các trại tham gia</p></div>
+            <br />
+            <hr class="gachngang" />
+            <div class='gallery'>
+                <div class='imgWrap imgWrap1' style='background-image:url(images/team1.jpg);' onclick="hienThongTinTrai(1)"></div>
+                <div class='imgWrap imgWrap2' style='background-image:url(images/team2.jpg);' onclick="hienThongTinTrai(2)"></div>
+                <div class='imgWrap imgWrap3' style='background-image:url(images/team3.jpg);' onclick="hienThongTinTrai(3)"></div>
+                <div class='imgWrap imgWrap4' style='background-image:url(images/team4.jpg);' onclick="hienThongTinTrai(4)"></div>
+                <div class='imgWrap imgWrap5' style='background-image:url(images/team5.jpg);' onclick="hienThongTinTrai(5)"></div>
+                <div class='imgWrap imgWrap6' style='background-image:url(images/team6.jpg);' onclick="hienThongTinTrai(6)"></div>
+            </div>
+            <div class="thongTinTrai" onclick="dongThongTinTrai()">
+                <img class="anhPhongTo"/>
+                <div class="tenTrai"></div>
+                <button style="position:absolute; top:0; right:0" onclick="dongThongTinTrai()">X</button>
+            </div>
+        </div>
+        <div id="section4">
+            <div class="section4-wrap">
+                <div class="section4-left">
+                    <h3 style="color: white; text-align: center; display: block; padding: 15px;">Các hoạt động chính</h3>
+                    <ul class="danhsachhoatdong">
+                        <li>
+                            <div class="mocTG">08h30</div>
+                            <div class="thongtinhd">Khai mạc hội trại</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">09h00</div>
+                            <div class="thongtinhd">Sinh viên tổ chức dựng trại</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">10h00</div>
+                            <div class="thongtinhd">Sinh viên nấu ăn trưa</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">11h30</div>
+                            <div class="thongtinhd">BTC tiến hành chấm điểm trại, chấm điểm nấu ăn</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">11h30</div>
+                            <div class="thongtinhd">Sinh viên ăn cơm và nghỉ ngơi tại chỗ</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">14h30</div>
+                            <div class="thongtinhd">Tổ chức các trò chơi dân gian</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">17h30</div>
+                            <div class="thongtinhd">Nghỉ ngơi tại trại, chuẩn bị cơm tối</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">20h00</div>
+                            <div class="thongtinhd">Đêm gala văn nghệ</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">21h30</div>
+                            <div class="thongtinhd">Đốt lửa trại và tổ chức các trò chơi tập thể</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">22h30</div>
+                            <div class="thongtinhd">Tổ chức trò chơi lớn</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">07h00</div>
+                            <div class="thongtinhd">Thu dọn đồ đạc và dọn dẹp vệ sinh nơi cắm trại</div>
+                        </li>
+                        <li>
+                            <div class="mocTG">09h00</div>
+                            <div class="thongtinhd">Bế mạc hội trại và trao giải</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section4-right">
+
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+        </div>
+        <div id="section5">
+            <h3>Hình ảnh</h3>
+            <!--<iframe src="DoXiNgau.html" frameborder=0 style="width:100%; height:80vh"></iframe>-->
+            <div class="slideshow1">
+                <img id="image" src="images/ss2.jpg" style="max-width: 100%; max-height: 100%" usemap="#NextPrev" />
+                <div class="nextArea" onmouseover="hienNutNext(true)" onmouseout="hienNutNext(false)" onclick="goNext()"></div>
+                <div class="backArea" onmouseover="hienNutBack(true)" onmouseout="hienNutBack(false)" onclick="goBack()"></div>
+                <!--
+                <map name="NextPrev">
+                    <area shape="rect" alt="next picture" coords="225,0,450,350" onmouseover="hienNutNext(true)" onmouseout="hienNutNext(false)" onclick="goNext()" />
+                    <area shape="rect" alt="previous picture" coords="0,0,225,350" onmouseover="hienNutBack(true)" onmouseout="hienNutBack(false)" onclick="goBack()" />
+                </map>
+                    -->
+                <img id="nutNext" src="images/Next-icon.png" />
+                <img id="nutBack" src="images/Back-icon.png" />
+                <br />
+                <input type="button" id="back" value="Back" onclick="goBack()" />
+                <input type="button" id="next" value="Next" onclick="goNext()" />
+                <input type="button" value="Start" onclick="startAutoInterval()"/>
+                <input type="button" value="Stop" onclick="stopAutoInterval()"/>
+                <div class="danhsachanh">
+                    <div class="ssAnhNho">
+                        <img src="images/ss0.jpg" onclick="nhayDenAnh(0)"/>
+                    </div>
+                    <div class="ssAnhNho">
+                        <img src="images/ss1.jpg" onclick="nhayDenAnh(1)" />
+                    </div>
+                    <div class="ssAnhNho">
+                        <img src="images/ss2.jpg" onclick="nhayDenAnh(2)" />
+                    </div>
+                    <div class="ssAnhNho">
+                        <img src="images/ss3.jpg" onclick="nhayDenAnh(3)" />
+                    </div>
+                    <div class="ssAnhNho">
+                        <img src="images/ss4.jpg" onclick="nhayDenAnh(4)" />
+                    </div>
+                    <div class="ssAnhNho">
+                        <img src="images/ss5.jpg" onclick="nhayDenAnh(5)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div id="section6">
+            <iframe src="GameXepHinh.html" frameborder=0 style="width:100%; height:120vh"></iframe>
+        </div>
+        -->
+        <div id="section7">
+            <div class="validateForm1">
+                <h3>Đăng ký tham gia</h3>
+                <form action="#" onsubmit="return validateForm()">
+                    <table height="300">
+                        <tr>
+                            <td width="150">Họ:</td>
+                            <td width="150"><input type="text" name="txtHo" placeholder="Họ" style="width:100%" /></td>
+                            <td width="200"></td>
+                        </tr>
+                        <tr>
+                            <td>Tên:</td>
+                            <td><input type="text" name="txtTen" placeholder="Tên" style="width:100%" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ngày sinh:</td>
+                            <td><input type="text" id="datepicker" name="dateNgaySinh" placeholder="Ngày sinh" style="width:100%"></td>
+                        </tr>
+                        <tr>
+                            <td>Giới tính:</td>
+                            <td><input type="radio" name="gioitinh" value="Nam" />Nam</td>
+                            <td><input type="radio" name="gioitinh" value="Nữ">Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Số điện thoại:</td>
+                            <td><input type="text" name="txtSoDienThoai" placeholder="Số điện thoại" style="width:100%" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text" name="txtEmail" placeholder="Email" style="width:100%" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Số thành viên:</td>
+                            <td><input type="text" name="txtSLTV" placeholder="Số lượng thành viên" style="width:100%" /></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Trò chơi tham gia:</td>
+                            <td><input type="checkbox" name="trochoi" value="Chuyển bóng" />Chuyển bóng</td>
+                            <td><input type="checkbox" name="trochoi" value="Thổi bóng" />Thổi bóng</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" name="trochoi" value="Ông đồ vẽ chữ" />Ông đồ vẽ chữ</td>
+                            <td><input type="checkbox" name="trochoi" value="Đua thuyền thúng" />Đua thuyền thúng</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" name="trochoi" value="Thời trang" />Thời trang</td>
+                        </tr>
+                        <tr>
+                            <td height="40"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center"><input type="submit" value="Đăng ký" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!--
+        <div id="section8">
+            <p>Tin tức</p>
+        </div>
+        -->
+    </section>
+    <footer>
+        <div class="footer-wrap">
+            <div class="logo-footer">
+                <img src="images/logo-poly-footer2.png" alt="logo"/>
+            </div>
+            <div class="footer-content">
+                <h3>FPT Polytechnic Tây Nguyên</h3>
+                <p>Số 27, tòa nhà VIB (tầng 2), Nguyễn Tất Thành, TP. Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
+                <p>Hotline: (0500) 355 5678</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<link href="css/style1.css" rel="stylesheet" type="text/css">
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+	<script>
+		var x1, x2;
+		var dem = 0;
+		
+		function doXiNgau() {
+			if(dem < 6) {
+				hienThi();
+				dem++;
+				setTimeout('doXiNgau()',150);
+			}else {
+				dem = 0;
+				hienThi();
+			}
+		}
+		
+		function hienThi() {
+			x1 = Math.floor(Math.random()*6+1);
+			x2 = Math.floor(Math.random()*6+1);
+			document.getElementById("xiNgau1").src = 'images/mat'+x1+'.gif';
+			document.getElementById("xiNgau2").src = 'images/mat'+x2+'.gif';
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <div class='nav'>
+            <div class='wrap' style="left: 0">
+                <div class='logo logo_small'>
+                    <img src="images/logo.png" alt="logo" />
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href='index.html'>Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section2'>Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href='index.html'>Hoạt động</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section5'>Hình ảnh</a>
+                        </li>
+                        <li>
+                            <a href='index.html#section7'>Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href='#'>Tiện ích</a>
+                            <ul>
+                                <li><a href="GameXepHinh.html">Xếp hình</a></li>
+                                <li><a href="DoXiNgau.html">Đổ xí ngầu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+	<div class="content">
+		<div class="tieuDe">
+			<p>Đổ xí ngầu</p>
+		</div>
+		<table>
+			<tr>
+				<td>
+					<img src="images/mat1.gif" id="xiNgau1">
+				</td>
+				<td>
+					<img src="images/mat1.gif" id="xiNgau2">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<input type="button" value="Đổ xí ngầu" onClick="doXiNgau()"/>
+	</div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="logo-footer">
+                <img src="images/logo-poly-footer2.png" alt="logo" />
+            </div>
+            <div class="footer-content">
+                <h3>FPT Polytechnic Tây Nguyên</h3>
+                <p>Số 27, tòa nhà VIB (tầng 2), Nguyễn Tất Thành, TP. Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
+                <p>Hotline: (0500) 355 5678</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

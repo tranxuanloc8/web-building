@@ -1,0 +1,48 @@
+.content {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-top: 20vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/trochoi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content input {
+	display: block;
+	margin: 0 auto;
+}
+
+.content table {
+	margin: 0 auto;
+    margin-top: 100px;
+}
+
+.khungChua {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-spacing: 0;
+}
+
+.tieuDe {
+	margin: 0 auto;
+    padding: 20px 0;
+	font-family: sans-serif;
+	font-size: 25px;
+	height: 80px;
+    width: 50%;
+	color: white;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	border-radius: 20px;
+}
+
+.tieuDe p {
+	text-align: center;
+}
+
+.content input {
+	width: 100px;
+	height: 40px;
+	font-size: 18px;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="css/style1.css" rel="stylesheet" type="text/css">
+        <link href="css/Style.css" rel="stylesheet" type="text/css" />
+		<script src="js/XepHinh.js"></script>
+	</head>
+	<body onload="setTimeout('khoiTao()',500)">
+        <header>
+            <div class='nav'>
+                <div class='wrap' style="left: 0">
+                    <div class='logo logo_small'>
+                        <img src="images/logo.png" alt="logo" />
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href='index.html'>Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href='index.html#section2'>Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href='index.html'>Hoạt động</a>
+                            </li>
+                            <li>
+                                <a href='index.html#section5'>Hình ảnh</a>
+                            </li>
+                            <li>
+                                <a href='index.html#section7'>Đăng ký</a>
+                            </li>
+                            <li>
+                                <a href='#'>Tiện ích</a>
+                                <ul>
+                                    <li><a href="GameXepHinh.html">Xếp hình</a></li>
+                                    <li><a href="DoXiNgau.html">Đổ xí ngầu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+		<div class="content">
+			<div class="tieuDe">
+				<p>Trò chơi xếp hình</p>
+			</div>
+			<table class="khungChua">
+				<script>
+					for(i = 0; i < 3; i++){
+						document.write('<tr>');
+						for(j = 1; j < 4; j++){
+							document.write("<td><a href='javascript:clickChuot("+(3*i+j)+")'><img style='display:block' id='img"+(3*i+j)+"' src=images/pic"+(3*i+j)+".jpg></a></td>");
+						}
+					}
+				</script>
+			</table>
+			<br>
+			<input type="button" id="nutNhan" value="Bỏ cuộc" onclick="boCuoc(this.value)">
+		</div>
+        <footer>
+            <div class="footer-wrap">
+                <div class="logo-footer">
+                    <img src="images/logo-poly-footer2.png" alt="logo" />
+                </div>
+                <div class="footer-content">
+                    <h3>FPT Polytechnic Tây Nguyên</h3>
+                    <p>Số 27, tòa nhà VIB (tầng 2), Nguyễn Tất Thành, TP. Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
+                    <p>Hotline: (0500) 355 5678</p>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
